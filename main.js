@@ -11,7 +11,7 @@ function olStike(){
 olStike()
 
 let dinoList2 = document.querySelector('#unordered-dinos ')
-let dinoList3 = document.querySelector('#unordered-dinos ')
+let dinoList3 = document.querySelectorAll('#unordered-dinos li ')
 
 dinoList2.addEventListener('click', function(event){
     let listItem = event.target;
@@ -44,7 +44,7 @@ let extinction = document.querySelector('#destroy-all')
 // }
 
 extinction.addEventListener('click',function(){
-    extinguisAll(dinoList1,dinoList2,dinoImg)
+    extinguisAll(dinoList1,dinoList3,dinoImg)
 })
 
 
